@@ -1,0 +1,19 @@
+update : 8/9/2024  ,,   the deploy is breaking woith latest solidity/ hardhat: 
+
+
+
+TypeError: Contract "IERC721" should be marked as abstract.
+  --> contracts/ERC721Full.sol:36:1:
+   |
+36 | contract IERC721 is IERC165 {
+   | ^ (Relevant source part starts here and spans across multiple lines).
+Note: Missing implementation:
+  --> contracts/ERC721Full.sol:73:5:
+   |
+73 |     function approve(address to, uint256 tokenId) public;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Missing implementation:
+  --> contracts/ERC721Full.sol:44:5:
+   |
+44 |     function balanceOf(address owner) public view returns (uint256 balance);
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
